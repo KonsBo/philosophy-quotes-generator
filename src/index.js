@@ -1,0 +1,1 @@
+alert("Love me");
