@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Philosophy Quotes Generator</title>
   </head>
   <body>
     <div class="container">
       <header><h1>AI Philosophy Quotes Generator</h1></header>
       <main>
-        <form>
+        <form id="quote-generator-form">
           <input
             type="text"
             placeholder="Add Philosopher"
@@ -21,7 +22,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="quote">The quote will be provided here</div>
+        <div class="quote" id="quote"></div>
       </main>
       <footer>
         This AI project was coded by
