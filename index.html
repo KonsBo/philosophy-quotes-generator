@@ -7,36 +7,39 @@
     <title>AI Philosophy Generator</title>
   </head>
   <body>
-    <header><h1>AI Philosophy Generator</h1></header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Add Philosopher"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>The quote will be provided here</div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/KonsBo" target="_blank"> konMpo </a> and is
-      open-sourced on
-      <a
-        href="https://github.com/KonsBo/philosophy-quotes-generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and is hosted on
-      <a
-        href="https://philosophy-quotes-ai-generator.netlify.app/"
-        target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header><h1>AI Philosophy Generator</h1></header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Add Philosopher"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="quote">The quote will be provided here</div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/KonsBo" target="_blank"> konMpo </a> and is
+        open-sourced on
+        <a
+          href="https://github.com/KonsBo/philosophy-quotes-generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and is hosted on
+        <a
+          href="https://philosophy-quotes-ai-generator.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
