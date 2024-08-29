@@ -4,6 +4,7 @@ body {
 }
 a {
   color: rgb(66, 105, 196);
+  text-decoration: none;
 }
 .container {
   margin: 120px auto;
@@ -33,6 +34,7 @@ form {
 .instructions {
   padding: 16px;
   border: 1px solid rgba(39, 33, 66, 0.5);
+  outline: none;
   width: 80%;
   font-size: 16px;
   border-radius: 50px;
