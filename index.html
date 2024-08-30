@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Philosophy Quotes Generator</title>
   </head>
   <body>
     <div class="container">
-      <header><h1>AI Philosophy Quotes Generator</h1></header>
+      <header><h1>AI Quotes Generator</h1></header>
       <main>
         <form id="quote-generator-form">
           <input
             type="text"
-            placeholder="Add Philosopher"
+            placeholder="Enter a topic"
             autofocus
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
@@ -33,7 +35,7 @@
           target="_blank"
           >GitHub</a
         >
-        and is hosted on
+        and hosted on
         <a
           href="https://philosophy-quotes-ai-generator.netlify.app/"
           target="_blank"
