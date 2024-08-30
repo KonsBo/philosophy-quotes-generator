@@ -1,6 +1,5 @@
 //Display the generated quote
 function displayQuote(response) {
-  console.log("quote generated");
   //response.data.answer
   new Typewriter("#quote", {
     strings: response.data.answer,
@@ -24,10 +23,6 @@ function generateQuote(event) {
   let prompt = `Users' instructions: Generate a quote from ${instructionsInput.value}.Provide the authors' name into a <strong> element.`;
 
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-
-  console.log("Generating Quote");
-  console.log(`Prompt:${prompt}`);
-  console.log(`Context:${context}`);
 
   let quoteElement = document.querySelector("#quote");
   quoteElement.classList.remove("hidden");
