@@ -12,6 +12,16 @@ a {
   color: rgb(66, 105, 196);
   text-decoration: none;
 }
+
+/* New link color after form submission */
+.form-submitted a {
+  color: #da401e; /* New color after form submission */
+}
+
+/* Other styles */
+.form-submitted a:hover {
+  color: rgb(141, 167, 158); /* Hover color after form submission */
+}
 .container {
   margin: 0 auto;
   margin: 120px auto;
@@ -79,10 +89,10 @@ form {
 
 .quote {
   font-size: 16px;
-  background-color: #fff;
+  background-color: rgb(227, 237, 234);
   padding: 20px;
   line-height: 2;
-  border-left: 3px solid rgb(119, 135, 98);
+  border-left: 4px solid rgb(98, 111, 80);
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 .hidden {
@@ -111,7 +121,7 @@ footer {
 /* Responsive design adjustments */
 @media (max-width: 768px) {
   .quote {
-    font-size: 1.25rem;
+    font-size: 14px;
   }
 
   .form-container {
@@ -130,7 +140,7 @@ footer {
   }
 
   .quote {
-    font-size: 1rem;
+    font-size: 12px;
   }
 
   .instructions,
