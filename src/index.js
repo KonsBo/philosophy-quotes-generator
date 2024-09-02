@@ -47,9 +47,15 @@ function generateQuote(event) {
       let imageUrl = response.data.urls.regular;
       displayBackgroundImage(imageUrl);
 
-      // Change the footer background color after the image is successfully fetched
+      // Add a class to the body after form submission
+      document.body.classList.add("form-submitted");
+
+      // Change the background color after the image is successfully fetched
       let footer = document.querySelector("footer");
       footer.style.color = "white";
+
+      let h1 = document.querySelector("h1");
+      h1.style.color = "white";
     })
     .catch(function (error) {
       console.error("Error fetching the image:", error);
