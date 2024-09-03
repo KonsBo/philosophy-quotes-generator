@@ -37,7 +37,7 @@ function generateQuote(event) {
 
   // Make a call to the Unsplash API for the image
   let unsplashApiKey = "r5Ax6pxb8Pur_qwmM5VPpIFReMBV_w5Ib29_K05sjEQ";
-  let unsplashApiURL = `https://api.unsplash.com/photos/random?query=abstract,${encodeURIComponent(
+  let unsplashApiURL = `https://api.unsplash.com/photos/random?query=abstract painting,${encodeURIComponent(
     instructionsInput.value
   )}&client_id=${unsplashApiKey}`;
 
@@ -46,13 +46,12 @@ function generateQuote(event) {
     .then(function (response) {
       let imageUrl = response.data.urls.regular;
       displayBackgroundImage(imageUrl);
-
-      // Add a class to the body after form submission
-      document.body.classList.add("form-submitted");
-
       // Change the background color after the image is successfully fetched
       let footer = document.querySelector("footer");
       footer.style.color = "white";
+
+      // Add a class to the body after form submission
+      document.body.classList.add("form-submitted");
 
       let h1 = document.querySelector("h1");
       h1.style.color = "white";

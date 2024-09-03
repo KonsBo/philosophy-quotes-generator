@@ -1,7 +1,6 @@
 body {
   height: 100vh; /* Ensure the body takes full viewport height */
   background-color: rgb(204, 215, 211);
-  font-family: Merriweather;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,14 +121,22 @@ footer {
 @media (max-width: 768px) {
   .quote {
     font-size: 14px;
+    max-width: 90%;
+    margin: auto 20px;
   }
 
   .form-container {
     padding: 15px;
+    max-width: 90%;
+    margin-left: 20px;
   }
 
   .instructions,
   .submit-button {
+    font-size: 14px;
+  }
+  footer {
+    padding: 8px; /* Reduce footer padding on smaller screens */
     font-size: 14px;
   }
 }
@@ -145,14 +152,17 @@ footer {
 
   .instructions,
   .submit-button {
-    width: 100%;
-    max-width: none;
-    padding: 8px;
     font-size: 14px;
   }
 
   .form-container {
     padding: 10px;
-    max-width: 600px; /* Adjust max-width for smaller screens */
+
+    max-width: 90%;
+    margin-left: 20px;
+  }
+  footer {
+    padding: 6px; /* Further reduce footer padding on very small screens */
+    font-size: 8px;
   }
 }
